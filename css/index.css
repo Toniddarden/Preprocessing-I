@@ -162,6 +162,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #0d3f67;
+  font-family: "Acme", sans-serif;
 }
 header nav a :hover {
   color: #d6ce15;
@@ -177,6 +178,7 @@ header nav a :hover {
   font-size: 3rem;
   padding-top: 14rem;
   color: #6b48ff;
+  font-family: "Acme", sans-serif;
 }
 .introduction img {
   border: 2px solid #d6ce15;
@@ -189,6 +191,7 @@ header nav a :hover {
   padding-top: 14rem;
   padding-left: 0.5rem;
   color: #6b48ff;
+  font-family: "Acme", sans-serif;
 }
 .intro-p p {
   font-size: 1.3rem;
@@ -209,6 +212,7 @@ header nav a :hover {
   justify-content: center;
   padding-top: 2rem;
   padding-left: 15rem;
+  font-family: "Acme", sans-serif;
 }
 .skills .skills-list {
   display: flex;
@@ -223,6 +227,7 @@ header nav a :hover {
 .skills .skills-list ul li p {
   font-size: 1.3rem;
   padding: 0.5rem;
+  color: #6b48ff;
 }
 .skills .skills-list img {
   width: 80%;
@@ -232,14 +237,17 @@ header nav a :hover {
   padding-left: 2rem;
 }
 .history {
-  padding: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 .history h1 {
   display: flex;
   justify-content: center;
   font-size: 4rem;
   padding-top: 2rem;
-  padding-left: 15rem;
+  padding-left: 7rem;
+  font-family: "Acme", sans-serif;
 }
 .history .history-boxes {
   display: flex;
@@ -250,6 +258,7 @@ header nav a :hover {
   font-size: 1.2rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  font-family: "Archivo Black", sans-serif;
 }
 .history .history-boxes .boxes p {
   padding-left: 1rem;
@@ -265,6 +274,7 @@ header nav a :hover {
   justify-content: left;
   padding-left: 6rem;
   font-size: 1.3rem;
+  font-family: "Archivo Black", sans-serif;
 }
 .contact ul {
   display: flex;

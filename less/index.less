@@ -138,27 +138,27 @@ table {
 @yellow: #d6ce15;
 
 .lightGrey {
-	color: @lightGrey;
+  color: @lightGrey;
 }
 
 .mediumGreen {
-	color: @mediumGreen;
+  color: @mediumGreen;
 }
 
 .blue {
-	color: @blue;
+  color: @blue;
 }
 
 .darkBlue {
-	color: @darkBlue;
+  color: @darkBlue;
 }
 
 .darkYellow {
-	color: @darkYellow;
+  color: @darkYellow;
 }
 
 .yellow {
-	color: @yellow;
+  color: @yellow;
 }
 
 * {
@@ -169,7 +169,7 @@ html,
 body {
   height: 100%;
   width: 1100px;
- background-color: @lightGrey;
+  background-color: @lightGrey;
 }
 
 // nav-bar
@@ -183,6 +183,7 @@ header {
     a {
       text-decoration: none;
       color: @darkBlue;
+      font-family: "Acme", sans-serif;
 
       :hover {
         color: @yellow;
@@ -202,24 +203,24 @@ header {
 
   h1 {
     font-size: 3rem;
-	padding-top: 14rem;
-	color: @blue;
+    padding-top: 14rem;
+    color: @blue;
+    font-family: "Acme", sans-serif;
   }
 
   img {
-	border: 2px solid @yellow;
+    border: 2px solid @yellow;
     width: 30%;
     position: relative;
     padding: 1%;
-	
-	
   }
 
   h2 {
     font-size: 3rem;
     padding-top: 14rem;
-	padding-left: 0.5rem;
-	color: @blue;
+    padding-left: 0.5rem;
+    color: @blue;
+    font-family: "Acme", sans-serif;
   }
 }
 
@@ -241,22 +242,20 @@ header {
   flex-direction: column;
   background-color: #ced6e0;
 
-
   h1 {
     font-size: 4rem;
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-	padding-left: 15rem;
-	
+    padding-left: 15rem;
+    font-family: "Acme", sans-serif;
   }
 
   .skills-list {
     display: flex;
     flex-direction: row;
     padding: 3rem;
-	padding-left: 9rem;
-	
+    padding-left: 9rem;
 
     ul {
       padding: 1%;
@@ -265,7 +264,8 @@ header {
       li {
         p {
           font-size: 1.3rem;
-          padding: 0.5rem;
+		  padding: 0.5rem;
+		  color: @blue;
         }
       }
     }
@@ -281,30 +281,32 @@ header {
 }
 // history
 .history {
-padding: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 
   h1 {
     display: flex;
     justify-content: center;
     font-size: 4rem;
     padding-top: 2rem;
-    padding-left: 15rem;
+    padding-left: 7rem;
+    font-family: "Acme", sans-serif;
   }
   .history-boxes {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
-    
 
     .boxes {
       h2 {
         font-size: 1.2rem;
         padding-bottom: 1rem;
         padding-left: 1rem;
+        font-family: "Archivo Black", sans-serif;
       }
       p {
-		padding-left: 1rem;
-		
+        padding-left: 1rem;
       }
     }
   }
@@ -321,6 +323,7 @@ padding: 2rem;
     justify-content: left;
     padding-left: 6rem;
     font-size: 1.3rem;
+    font-family: "Archivo Black", sans-serif;
   }
 
   ul {
@@ -332,8 +335,8 @@ padding: 2rem;
       a {
         font-size: 1rem;
         text-decoration: none;
-		padding-left: 6.5rem;
-		color: #1f2606;
+        padding-left: 6.5rem;
+        color: #1f2606;
       }
     }
   }
