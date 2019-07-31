@@ -127,6 +127,15 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.acme {
+  font-family: "Acme", sans-serif;
+}
+.pepermint {
+  font-family: "Permanent Marker", cursive;
+}
+.arch {
+  font-family: "Archivo Black", sans-serif;
+}
 .lightGrey {
   color: #f2f4f6;
 }
@@ -154,6 +163,13 @@ body {
   width: 1100px;
   background-color: #f2f4f6;
 }
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    height: 100%;
+    width: 500px;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-evenly;
@@ -173,6 +189,14 @@ header nav a :hover {
   justify-content: space-evenly;
   padding: 1.6rem;
   padding-left: 4rem;
+}
+@media only screen and (max-width: 500px) {
+  .introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
 }
 .introduction h1 {
   font-size: 3rem;
@@ -206,6 +230,14 @@ header nav a :hover {
   flex-direction: column;
   background-color: #ced6e0;
 }
+@media only screen and (max-width: 500px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
+}
 .skills h1 {
   font-size: 4rem;
   display: flex;
@@ -214,11 +246,24 @@ header nav a :hover {
   padding-left: 15rem;
   font-family: "Acme", sans-serif;
 }
+@media only screen and (max-width: 500px) {
+  .skills h1 {
+    padding-left: 2rem;
+  }
+}
 .skills .skills-list {
   display: flex;
   flex-direction: row;
   padding: 3rem;
   padding-left: 9rem;
+}
+@media only screen and (max-width: 500px) {
+  .skills .skills-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
 }
 .skills .skills-list ul {
   padding: 1%;
@@ -241,6 +286,13 @@ header nav a :hover {
   display: flex;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 500px) {
+  .history {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+  }
+}
 .history h1 {
   display: flex;
   justify-content: center;
@@ -253,6 +305,22 @@ header nav a :hover {
   display: flex;
   justify-content: space-evenly;
   padding-top: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .history .history-boxes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .history .history-boxes .boxes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2rem;
+  }
 }
 .history .history-boxes .boxes h2 {
   font-size: 1.2rem;
@@ -269,6 +337,12 @@ header nav a :hover {
   padding: 3rem;
   background-color: #1ee3cf;
 }
+@media only screen and (max-width: 500px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contact h2 {
   display: flex;
   justify-content: left;
@@ -280,6 +354,17 @@ header nav a :hover {
   display: flex;
   justify-content: right;
   padding-top: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact ul li {
+    padding: 1rem;
+  }
 }
 .contact ul li a {
   font-size: 1rem;
