@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -127,6 +127,24 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.lightGrey {
+  color: #f2f4f6;
+}
+.mediumGreen {
+  color: #1ee3cf;
+}
+.blue {
+  color: #6b48ff;
+}
+.darkBlue {
+  color: #0d3f67;
+}
+.darkYellow {
+  color: #a4a71e;
+}
+.yellow {
+  color: #d6ce15;
+}
 * {
   box-sizing: border-box;
 }
@@ -134,6 +152,7 @@ html,
 body {
   height: 100%;
   width: 1100px;
+  background-color: #f2f4f6;
 }
 header nav {
   display: flex;
@@ -142,10 +161,10 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: black;
+  color: #0d3f67;
 }
 header nav a :hover {
-  color: #D6CE15;
+  color: #d6ce15;
 }
 .introduction {
   display: flex;
@@ -157,23 +176,104 @@ header nav a :hover {
 .introduction h1 {
   font-size: 3rem;
   padding-top: 14rem;
+  color: #6b48ff;
 }
 .introduction img {
+  border: 2px solid #d6ce15;
   width: 30%;
   position: relative;
   padding: 1%;
-  padding-top: 7%;
 }
 .introduction h2 {
   font-size: 3rem;
   padding-top: 14rem;
   padding-left: 0.5rem;
+  color: #6b48ff;
 }
 .intro-p p {
   font-size: 1.3rem;
-  color: #53900F;
+  color: #0d3f67;
   display: flex;
   justify-content: center;
   padding: 1.6rem;
   padding-left: 7.5rem;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  background-color: #ced6e0;
+}
+.skills h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-left: 15rem;
+}
+.skills .skills-list {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  padding-left: 9rem;
+}
+.skills .skills-list ul {
+  padding: 1%;
+  padding-top: 5%;
+}
+.skills .skills-list ul li p {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.skills .skills-list img {
+  width: 80%;
+  position: relative;
+  padding: 1%;
+  padding-top: 5%;
+  padding-left: 2rem;
+}
+.history {
+  padding: 2rem;
+}
+.history h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  padding-top: 2rem;
+  padding-left: 15rem;
+}
+.history .history-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+.history .history-boxes .boxes h2 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.history .history-boxes .boxes p {
+  padding-left: 1rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #1ee3cf;
+}
+.contact h2 {
+  display: flex;
+  justify-content: left;
+  padding-left: 6rem;
+  font-size: 1.3rem;
+}
+.contact ul {
+  display: flex;
+  justify-content: right;
+  padding-top: 2rem;
+}
+.contact ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  padding-left: 6.5rem;
+  color: #1f2606;
 }
