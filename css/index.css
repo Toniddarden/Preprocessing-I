@@ -1,1 +1,374 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.acme {
+  font-family: "Acme", sans-serif;
+}
+.pepermint {
+  font-family: "Permanent Marker", cursive;
+}
+.arch {
+  font-family: "Archivo Black", sans-serif;
+}
+.lightGrey {
+  color: #f2f4f6;
+}
+.mediumGreen {
+  color: #1ee3cf;
+}
+.blue {
+  color: #6b48ff;
+}
+.darkBlue {
+  color: #0d3f67;
+}
+.darkYellow {
+  color: #a4a71e;
+}
+.yellow {
+  color: #d6ce15;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 1100px;
+  background-color: #f2f4f6;
+}
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    height: 100%;
+    width: 500px;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.6rem;
+}
+header nav a {
+  text-decoration: none;
+  color: #0d3f67;
+  font-family: "Acme", sans-serif;
+}
+header nav a :hover {
+  color: #d6ce15;
+}
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1.6rem;
+  padding-left: 4rem;
+}
+@media only screen and (max-width: 500px) {
+  .introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
+}
+.introduction h1 {
+  font-size: 3rem;
+  padding-top: 14rem;
+  color: #6b48ff;
+  font-family: "Acme", sans-serif;
+}
+.introduction img {
+  border: 2px solid #d6ce15;
+  width: 30%;
+  position: relative;
+  padding: 1%;
+}
+.introduction h2 {
+  font-size: 3rem;
+  padding-top: 14rem;
+  padding-left: 0.5rem;
+  color: #6b48ff;
+  font-family: "Acme", sans-serif;
+}
+.intro-p p {
+  font-size: 1.3rem;
+  color: #0d3f67;
+  display: flex;
+  justify-content: center;
+  padding: 1.6rem;
+  padding-left: 7.5rem;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  background-color: #ced6e0;
+}
+@media only screen and (max-width: 500px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
+}
+.skills h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-left: 15rem;
+  font-family: "Acme", sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  .skills h1 {
+    padding-left: 2rem;
+  }
+}
+.skills .skills-list {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  padding-left: 9rem;
+}
+@media only screen and (max-width: 500px) {
+  .skills .skills-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
+}
+.skills .skills-list ul {
+  padding: 1%;
+  padding-top: 5%;
+}
+.skills .skills-list ul li p {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: #6b48ff;
+}
+.skills .skills-list img {
+  width: 80%;
+  position: relative;
+  padding: 1%;
+  padding-top: 5%;
+  padding-left: 2rem;
+}
+.history {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 500px) {
+  .history {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+  }
+}
+.history h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  padding-top: 2rem;
+  padding-left: 7rem;
+  font-family: "Acme", sans-serif;
+}
+.history .history-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .history .history-boxes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .history .history-boxes .boxes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2rem;
+  }
+}
+.history .history-boxes .boxes h2 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  font-family: "Archivo Black", sans-serif;
+}
+.history .history-boxes .boxes p {
+  padding-left: 1rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #1ee3cf;
+}
+@media only screen and (max-width: 500px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contact h2 {
+  display: flex;
+  justify-content: left;
+  padding-left: 6rem;
+  font-size: 1.3rem;
+  font-family: "Archivo Black", sans-serif;
+}
+.contact ul {
+  display: flex;
+  justify-content: right;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact ul li {
+    padding: 1rem;
+  }
+}
+.contact ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  padding-left: 6.5rem;
+  color: #1f2606;
+}
